@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 1,
+    "failures": 0,
+    "start": "2023-05-20T16:05:47.816Z",
+    "end": "2023-05-20T16:05:53.221Z",
+    "duration": 5405,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cec6877b-f743-4f71-8e35-fc45a32a65cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dropdown.cy.js",
+      "file": "cypress\\e2e\\dropdown.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4d9bcbe9-0b8e-4350-b2af-05dddc89dde9",
+          "title": "akcje wybrania opcji select",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "wybieranie opcji",
+              "fullTitle": "akcje wybrania opcji select wybieranie opcji",
+              "timedOut": null,
+              "duration": 5359,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\n//wybieranie selecta po nazwie\ncy.get('#selectProductSort').select('In stock');\n//wybieranie selecta po value\ncy.get('#selectProductSort').select('price:asc');\n//wybieranie selecta po indeksie\ncy.get('#selectProductSort').select(7);",
+              "err": {},
+              "uuid": "74f857bc-4bf0-4130-8a48-31674e921310",
+              "parentUUID": "4d9bcbe9-0b8e-4350-b2af-05dddc89dde9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "wybieranie kazdej opcji po kolei",
+              "fullTitle": "akcje wybrania opcji select wybieranie kazdej opcji po kolei",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\n//zrobienie iteracji po select\ncy.get('#selectProductSort').then(select => {\n  cy.wrap(select).find('option').each(opcja => {\n    cy.wrap(select).select(opcja.text());\n  });\n});",
+              "err": {},
+              "uuid": "82f26434-9879-4ed6-8788-c7a79bcce430",
+              "parentUUID": "4d9bcbe9-0b8e-4350-b2af-05dddc89dde9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "74f857bc-4bf0-4130-8a48-31674e921310"
+          ],
+          "failures": [],
+          "pending": [
+            "82f26434-9879-4ed6-8788-c7a79bcce430"
+          ],
+          "skipped": [],
+          "duration": 5359,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

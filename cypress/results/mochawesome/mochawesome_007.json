@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-20T16:05:28.718Z",
+    "end": "2023-05-20T16:05:45.202Z",
+    "duration": 16484,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "84551db1-99b3-4b3d-857a-dbf418a7b469",
+      "title": "",
+      "fullFile": "cypress\\e2e\\customCommands.cy.js",
+      "file": "cypress\\e2e\\customCommands.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c0e8dc6d-1d1a-41b2-9f12-e2caa399c46f",
+          "title": "Custom Commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "komendy",
+              "fullTitle": "Custom Commands komendy",
+              "timedOut": null,
+              "duration": 1274,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.openTshirtsTab();",
+              "err": {},
+              "uuid": "055a1d0c-0295-48cd-a785-bf2fd87965d1",
+              "parentUUID": "c0e8dc6d-1d1a-41b2-9f12-e2caa399c46f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "search",
+              "fullTitle": "Custom Commands search",
+              "timedOut": null,
+              "duration": 15151,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.searchPhrase('Nowy tekst{backspace}', 1200);\ncy.clearPhrase();",
+              "err": {},
+              "uuid": "ba8924c0-5d1d-4004-bf2e-2f229e106c3a",
+              "parentUUID": "c0e8dc6d-1d1a-41b2-9f12-e2caa399c46f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "055a1d0c-0295-48cd-a785-bf2fd87965d1",
+            "ba8924c0-5d1d-4004-bf2e-2f229e106c3a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16425,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

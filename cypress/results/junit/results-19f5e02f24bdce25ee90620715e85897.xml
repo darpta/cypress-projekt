@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.484" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-05-20T16:05:28" tests="0" file="cypress\e2e\customCommands.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Custom Commands" timestamp="2023-05-20T16:05:28" tests="2" time="16.456" failures="0">
+    <testcase name="Custom Commands komendy" time="1.274" classname="komendy">
+    </testcase>
+    <testcase name="Custom Commands search" time="15.151" classname="search">
+    </testcase>
+  </testsuite>
+</testsuites>

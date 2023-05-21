@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.838" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-05-20T16:06:22" tests="0" file="cypress\e2e\selectPOM.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="akcje wybrania opcji select" timestamp="2023-05-20T16:06:22" tests="1" time="2.813" failures="1">
+    <testcase name="akcje wybrania opcji select wybieranie kazdej opcji po kolei" time="0.000" classname="wybieranie kazdej opcji po kolei">
+      <failure message="`cy.select()` failed because the page updated as a result of this command, but you tried to continue the command chain. The subject is no longer attached to the DOM, and Cypress cannot requery the page after commands such as `cy.select()`.
+
+Common situations why this happens:
+  - Your JS framework re-rendered asynchronously
+  - Your app code reacted to an event firing and removed the element
+
+You can typically solve this by breaking up a chain. For example, rewrite:
+
+&gt; `cy.get(&apos;button&apos;).click().should(&apos;have.class&apos;, &apos;active&apos;)`
+
+to
+
+&gt; `cy.get(&apos;button&apos;).as(&apos;btn&apos;).click()`
+&gt; `cy.get(&apos;@btn&apos;).should(&apos;have.class&apos;, &apos;active&apos;)`
+
+https://on.cypress.io/element-has-detached-from-dom" type="CypressError"><![CDATA[CypressError: `cy.select()` failed because the page updated as a result of this command, but you tried to continue the command chain. The subject is no longer attached to the DOM, and Cypress cannot requery the page after commands such as `cy.select()`.
+
+Common situations why this happens:
+  - Your JS framework re-rendered asynchronously
+  - Your app code reacted to an event firing and removed the element
+
+You can typically solve this by breaking up a chain. For example, rewrite:
+
+> `cy.get('button').click().should('have.class', 'active')`
+
+to
+
+> `cy.get('button').as('btn').click()`
+> `cy.get('@btn').should('have.class', 'active')`
+
+https://on.cypress.io/element-has-detached-from-dom
+    at isAttached (http://automationpractice.pl/__cypress/runner/cypress_runner.js:161818:66)
+    at validateType (http://automationpractice.pl/__cypress/runner/cypress_runner.js:161688:9)
+    at Object.isType (http://automationpractice.pl/__cypress/runner/cypress_runner.js:161723:7)
+    at $Cy.pushSubject (http://automationpractice.pl/__cypress/runner/cypress_runner.js:161431:22)
+    at wrapped (http://automationpractice.pl/__cypress/runner/cypress_runner.js:161017:19)
+From Your Spec Code:
+    at Context.eval (webpack:///./cypress/support/pageObject/selectPage.js:8:32)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

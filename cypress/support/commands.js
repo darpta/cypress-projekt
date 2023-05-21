@@ -1,5 +1,8 @@
 import 'cypress-file-upload'
 import '@cypress-audit/lighthouse/commands'
+import '@percy/cypress'
+import 'cypress-plugin-snapshots/commands'
+import '@percy/cypress'
 
 Cypress.Commands.add('openTshirtsTab', () => {
     cy.visit('http://automationpractice.pl/index.php?id_category=5&controller=category')

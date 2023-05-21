@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.405" tests="2" failures="0" skipped="1">
+  <testsuite name="Root Suite" timestamp="2023-05-20T16:05:47" tests="0" file="cypress\e2e\dropdown.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="akcje wybrania opcji select" timestamp="2023-05-20T16:05:47" tests="2" time="5.384" failures="0">
+    <testcase name="akcje wybrania opcji select wybieranie opcji" time="5.359" classname="wybieranie opcji">
+    </testcase>
+  </testsuite>
+</testsuites>

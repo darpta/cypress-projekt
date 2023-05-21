@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-21T08:56:55.620Z",
+    "end": "2023-05-21T08:57:01.948Z",
+    "duration": 6328,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c4cd8e4d-e73b-4c59-8565-d4ec96dfde6c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\visualTestingAndProxy.cy.js",
+      "file": "cypress\\e2e\\visualTestingAndProxy.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26a50e2d-58e3-4a46-9535-a22979d1e1f5",
+          "title": "Visual regression",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "wczytywanie sie elementu",
+              "fullTitle": "Visual regression wczytywanie sie elementu",
+              "timedOut": null,
+              "duration": 3529,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://picsum.photos/');\n// cy.get('header.content-section-light').then(image => {\n//     //cy.wrap - zlap element\n//     cy.wrap(image).toMatchImageSnapshot()\n//     //po kazdym run zmienia sie obrazek stad blad\n//     //odwolanie i sprawdzenie calego dokumentu (strony)\n//     //cy.document().toMatchImageSnapshot()\n// })\n//zalogowany na percy.io przez konto Google michaelvinstest@gmail.com\ncy.percySnapshot();\n//polecenie do uruchomienia testow w Percy - 'percy exec -- cypress run'\n//trzeba okreslic jakie testy uruchomic - '--spec 'sciezka_do_testu''\n//command: npx percy exec -- cypress run --spec 'cypress/e2e/visualTestingAndProxy.cy.js'",
+              "err": {},
+              "uuid": "ef65c982-0284-4566-aa87-36d8f093296f",
+              "parentUUID": "26a50e2d-58e3-4a46-9535-a22979d1e1f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ef65c982-0284-4566-aa87-36d8f093296f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3529,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

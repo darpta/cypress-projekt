@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.487" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-05-20T16:06:00" tests="0" file="cypress\e2e\klikniecie.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="akcje kliniecia" timestamp="2023-05-20T16:06:00" tests="1" time="2.470" failures="0">
+    <testcase name="akcje kliniecia klik" time="2.455" classname="klik">
+    </testcase>
+  </testsuite>
+</testsuites>

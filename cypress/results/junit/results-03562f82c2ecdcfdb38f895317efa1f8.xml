@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.559" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-05-20T16:04:22" tests="0" file="cypress\e2e\alerty.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="alerty" timestamp="2023-05-20T16:04:22" tests="2" time="25.528" failures="2">
+    <testcase name="alerty alert" time="0.000" classname="alert">
+      <failure message="Timed out retrying after 4000ms: The command was expected to run against origin `https://testowanie-oprogramowania.pl` but the application is at origin `https://erli.pl`.
+
+This commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.
+
+Using `cy.origin()` to wrap the commands run on `https://erli.pl` will likely fix this issue.
+
+`cy.origin(&apos;https://erli.pl&apos;, () =&gt; {`
+`  &lt;commands targeting https://erli.pl go here&gt;`
+`})`
+
+https://on.cypress.io/cy-visit-succeeded-but-commands-fail" type="CypressError"><![CDATA[CypressError: Timed out retrying after 4000ms: The command was expected to run against origin `https://testowanie-oprogramowania.pl` but the application is at origin `https://erli.pl`.
+
+This commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.
+
+Using `cy.origin()` to wrap the commands run on `https://erli.pl` will likely fix this issue.
+
+`cy.origin('https://erli.pl', () => {`
+`  <commands targeting https://erli.pl go here>`
+`})`
+
+https://on.cypress.io/cy-visit-succeeded-but-commands-fail
+    at cypressErr (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:164660:18)
+    at Object.errByPath (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:164715:10)
+    at Object.commandCanCommunicateWithAUT (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:161902:98)
+    at <unknown> (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:148843:22)
+    at Object.subjectFn (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:159697:16)
+    at $Cy.verifyUpcomingAssertions (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:140921:31)
+    at onRetry (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:159688:15)
+    at tryCatcher (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:18744:23)
+    at Promise.attempt.Promise.try (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16018:29)
+    at whenStable (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:156574:65)
+    at <unknown> (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:156015:14)
+    at tryCatcher (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:18744:23)
+    at Promise._settlePromiseFromHandler (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16679:31)
+    at Promise._settlePromise (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16736:18)
+    at Promise._settlePromise0 (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16781:10)
+    at Promise._settlePromises (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16861:18)
+    at Promise._fulfill (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16805:18)
+    at <unknown> (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:18419:46)
+From Your Spec Code:
+    at Context.eval (webpack:///./cypress/e2e/alerty.cy.js:6:11)]]></failure>
+    </testcase>
+    <testcase name="alerty alert config" time="0.000" classname="alert config">
+      <failure message="Timed out retrying after 4000ms: Cannot read properties of undefined (reading &apos;origin&apos;)" type="TypeError"><![CDATA[TypeError: Timed out retrying after 4000ms: Cannot read properties of undefined (reading 'origin')
+    at Object.commandCanCommunicateWithAUT (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:161904:41)
+    at <unknown> (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:148843:22)
+    at Object.subjectFn (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:159697:16)
+    at $Cy.verifyUpcomingAssertions (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:140921:31)
+    at onRetry (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:159688:15)
+    at tryCatcher (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:18744:23)
+    at Promise.attempt.Promise.try (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16018:29)
+    at whenStable (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:156574:65)
+    at <unknown> (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:156015:14)
+    at tryCatcher (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:18744:23)
+    at Promise._settlePromiseFromHandler (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16679:31)
+    at Promise._settlePromise (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16736:18)
+    at Promise._settlePromise0 (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16781:10)
+    at Promise._settlePromises (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16861:18)
+    at Promise._fulfill (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:16805:18)
+    at <unknown> (https://testowanie-oprogramowania.pl/__cypress/runner/cypress_runner.js:18419:46)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

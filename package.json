@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open",
-    "all": "npx cypress run",
+    "all": "npx cypress run --record --key d5ad15d8-d8d0-43bf-9142-2db2dd1db160",
     "spec": "npx cypress run --spec 'cypress/e2e/klikniecie.cy.js' --headed",
     "chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/klikniecie.cy.js' --headed",
     "firefox": "npm run spec -- --browser firefox",
@@ -26,6 +26,8 @@
   "license": "ISC",
   "devDependencies": {
     "@cypress-audit/lighthouse": "^1.4.2",
+    "@percy/cli": "^1.24.2",
+    "@percy/cypress": "^3.1.2",
     "cypress": "^12.11.0",
     "cypress-dark": "^1.8.3",
     "cypress-file-upload": "^5.0.8",
@@ -34,5 +36,8 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-plugin-snapshots": "^1.4.4"
   }
 }

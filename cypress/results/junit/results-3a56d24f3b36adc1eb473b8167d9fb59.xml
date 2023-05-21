@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.696" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-05-21T09:01:08" tests="0" file="cypress\e2e\visualTestingAndProxy.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Visual regression" timestamp="2023-05-21T09:01:08" tests="1" time="5.587" failures="0">
+    <testcase name="Visual regression wczytywanie sie elementu" time="2.875" classname="wczytywanie sie elementu">
+    </testcase>
+  </testsuite>
+</testsuites>
